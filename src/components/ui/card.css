@@ -1,0 +1,62 @@
+.uiCard {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+
+.uiCard--primary {
+  --cardAccent: var(--primary);
+}
+
+.uiCard--secondary {
+  --cardAccent: var(--secondary);
+}
+
+.uiCard--accent {
+  --cardAccent: var(--accent);
+}
+
+.uiCard__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.uiCard__title {
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--muted);
+}
+
+.uiCard__subtitle {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.uiCard__value {
+  font-size: 26px;
+  font-weight: 750;
+  letter-spacing: -0.4px;
+}
+
+.uiCard--primary .uiCard__value {
+  color: var(--primary);
+}
+
+.uiCard--secondary .uiCard__value {
+  color: var(--secondary);
+}
+
+.uiCard--accent .uiCard__value {
+  color: var(--accent);
+}
+
+.uiCard__body {
+  margin-top: 10px;
+}
+
