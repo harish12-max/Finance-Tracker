@@ -1,16 +1,44 @@
-# React + Vite
+# Finance Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive personal finance tracker built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Dashboard with income, expenses, balance, and budget overview
+- Add, edit, delete, search, filter, and sort transactions
+- Budget management
+- Analytics with spending and monthly trend charts
+- Multi-currency display and exchange-rate conversion
+- Browser persistence with localStorage
+- Responsive layout
 
-## React Compiler
+## Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- React Router
+- Recharts
+- Axios
+- React Hook Form + Yup
+- Framer Motion
+- React Toastify
 
-## Expanding the ESLint configuration
+## Run locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Deployment
+
+The current app stores transactions and budgets in the browser using localStorage. This means data is tied to the browser/device and is not shared across devices.
+
+If a backend is added later, configure `VITE_API_BASE_URL` in the hosting provider's environment variables.
